@@ -1,5 +1,9 @@
 #+TITLE: dstyle: differential style-checking
 
+=dstyle= runs a style-checker on your code, but reports style warnings
+only for code that is new or changed in this branch, compared to the
+mainline.
+
 * Use
 
 The use dstyle, stand in the working-tree of a branch in a git
@@ -9,8 +13,7 @@ repository, then run:
 dstyle-rubocop.sh
 #+END_SRC
 
-You will receive output for style warning in only new or changed code,
-similar to the following:
+You will receive output similar to the following:
 
 #+BEGIN_EXAMPLE
 my_script.rb:8:W: Useless assignment to variable - `x`.
