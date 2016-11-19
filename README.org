@@ -1,0 +1,17 @@
+#+TITLE: dstyle: differential style-checking
+
+* Use
+
+The use dstyle, stand in the working-tree of a branch in a git
+repository, then run:
+
+#+BEGIN_SRC sh
+dstyle-rubocop.sh
+#+END_SRC
+
+You will receive output for style warning in only new or changed code,
+similar to the following:
+
+#+BEGIN_EXAMPLE
+my_script.rb:8:W: Useless assignment to variable - `x`.
+#+END_EXAMPLE
